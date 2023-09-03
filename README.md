@@ -1,5 +1,9 @@
 # obsidian config
 
+- `.obsidian/` - obsidian themes, plugins, hotkeys config
+- `.obsidian.vimrc` - vim plugin .vimrc file
+- `.gitignore` - git ignore file
+
 
 installed plugins:
 ```javascript
@@ -16,4 +20,13 @@ plugins
 ├── obsidian-vimrc-support
 ├── remember-cursor-position
 └── table-editor-obsidian
+```
+
+
+Installation:
+```bash
+git clone https://gitee.com/yangsl306/obsidian-config.git
+
+cd obsidian-config
+cp -r .obsidian/ .obsidian.vimrc .gitignore /path-to-vault
 ```
