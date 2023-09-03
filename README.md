@@ -1,4 +1,4 @@
-# obsidian config
+# Obsidian config
 
 - `.obsidian/` - obsidian themes, plugins, hotkeys config
 - `.obsidian.vimrc` - vim plugin .vimrc file
@@ -22,8 +22,8 @@ plugins
 └── table-editor-obsidian
 ```
 
+## Installation
 
-Installation:
 ```bash
 git clone https://gitee.com/yangsl306/obsidian-config.git
 
