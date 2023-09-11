@@ -28,5 +28,5 @@ plugins
 git clone https://gitee.com/yangsl306/obsidian-config.git
 
 cd obsidian-config
-cp -r .obsidian/ .obsidian.vimrc .gitignore /path-to-vault
+cp -r .obsidian/ .obsidian.vimrc .gitignore path-to-vault/
 ```
