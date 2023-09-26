@@ -1,11 +1,11 @@
 # Obsidian config
 
-- `.obsidian/` - obsidian themes, plugins, hotkeys config
+- `.obsidian/` - obsidian themes, core and community plugins, hotkeys config
 - `.obsidian.vimrc` - vim plugin .vimrc file
 - `.gitignore` - git ignore file
 
-
 installed plugins:
+
 ```javascript
 plugins
 ├── editing-toolbar
