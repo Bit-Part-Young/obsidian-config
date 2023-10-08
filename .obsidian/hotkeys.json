@@ -7,5 +7,14 @@
       ],
       "key": "L"
     }
+  ],
+  "slides:start": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "L"
+    }
   ]
 }
