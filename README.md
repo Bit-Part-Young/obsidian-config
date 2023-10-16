@@ -17,6 +17,8 @@
 - `.obsidian.vimrc` - vim plugin .vimrc file
 - `.gitignore` - gitignore file
 
+---
+
 installed plugins:
 
 ```txt
@@ -37,6 +39,7 @@ plugins
 
 >相关插件介绍可点击查看 [Obsidian 使用](https://seekanotherland.xyz/hexo-demo/posts/4661.html)
 
+---
 
 ## Installation & Usage
 
