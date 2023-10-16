@@ -23,6 +23,8 @@ nmap ] }
 nmap H ^
 nmap L $
 
+" Change insert mode to Normal mode
+imap jj <Esc>
 
 exmap nextHeading jsfile mdHelpers.js {jumpHeading(true)}
 exmap prevHeading jsfile mdHelpers.js {jumpHeading(false)}
@@ -44,6 +46,4 @@ exmap togglefold obcommand editor:toggle-fold
 nmap zo :togglefold
 nmap zc :togglefold
 nmap za :togglefold
-
-
 
