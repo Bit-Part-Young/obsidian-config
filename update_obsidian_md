@@ -1,0 +1,35 @@
+#!/bin/bash
+
+
+git_update(){
+    git status --short --branch
+    echo " "
+    git add .
+    git commit -m "update"
+    echo " "
+    git push origin master
+}
+
+
+update_num(){
+    cd $1
+
+    update_md_num=$(git status --short --branch | grep -E "*\.md$" | wc -l)
+
+    if [[ $update_md_num -eq 0 ]]; then
+        echo "No obsidian md files are updated."
+    else
+        echo -e "${update_md_num} obsidian md file(s) is(are) updated.\n"
+        git_update
+    fi
+
+    cd - > /dev/null 2>&1 
+}
+
+
+obsd_md_path="/mnt/d/obsidian-md"
+if [[ $HOSTNAME =~ "DESKTOP" ]]; then
+    obsd_md_path="/mnt/e/obsidian-md"
+fi
+
+update_num ${obsd_md_path}
