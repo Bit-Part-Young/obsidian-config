@@ -11,15 +11,17 @@
 ├── .gitignore
 ├── .obsidian/
 ├── .obsidian.vimrc
+├── Makefile
 ```
 
-- `.obsidian/` - obsidian themes, core and community plugins, hotkeys config
-- `.obsidian.vimrc` - vim plugin .vimrc file
-- `.gitignore` - gitignore file
+- `.obsidian/` - obsidian 主题、核心及社区插件、快捷键等设置
+- `.obsidian.vimrc` - obsidian vim 插件的 .vimrc 配置文件
+- `.gitignore` - gitignore 文件
+- `Makefile` - Makefile 文件
 
 ---
 
-installed plugins:
+已安装插件：
 
 ```txt
 plugins
@@ -45,17 +47,16 @@ plugins
 
 ---
 
-## Installation & Usage
+## 安装 & 使用
 
-**You should make your obsidian vault a git repo first.**
+**需使你的obsidian vault git 初始化**
 
 ```bash
 git clone https://gitee.com/yangsl306/obsidian-config.git
 
 cd obsidian-config
 
-cp -r .obsidian/ .obsidian.vimrc .gitignore update_obsidian_md path-to-vault/
-cp Makefile_obsd path-to-vault/Makefile
+cp -r .obsidian/ .obsidian.vimrc .gitignore Makefile path-to-vault/
 ```
 
 ---
@@ -63,8 +64,6 @@ cp Makefile_obsd path-to-vault/Makefile
 ## 注意事项
 
 `.obsidian` 目录中的 `workspace.json` 文件以及 `.obsidian/plugins/obsidian-icon-folder/icons/tabler-icons/` 插件（该插件现已卸载）目录不进行同步，将其写进 `.gitignore` 文件中，若已 push 到远程 repo，可输入下列命令将其删除：
-
->[用git同步obsidian手机端与台式机的配置文件频繁冲突的问题的解决方案 - 知乎](https://zhuanlan.zhihu.com/p/492104181)
 
 ```bash
 git rm --cached .obsidian/workspace.json 
