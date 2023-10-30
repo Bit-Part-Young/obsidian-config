@@ -11,7 +11,7 @@
 ├── .gitignore
 ├── .obsidian/
 ├── .obsidian.vimrc
-├── Makefile
+└── Makefile
 ```
 
 - `.obsidian/` - obsidian 主题、核心及社区插件、快捷键等设置
@@ -49,7 +49,7 @@ plugins
 
 ## 安装 & 使用
 
-**需使你的obsidian vault git 初始化**
+**需先使你的 obsidian vault git 初始化**
 
 ```bash
 git clone https://gitee.com/yangsl306/obsidian-config.git
