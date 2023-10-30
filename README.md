@@ -23,13 +23,17 @@ installed plugins:
 
 ```txt
 plugins
+├── dataview/
 ├── editing-toolbar/
 ├── emoji-shortcodes/
+├── math-booster/
+├── mathlinks/
 ├── obsidian-admonition/
 ├── obsidian-auto-link-title/
 ├── obsidian-enhancing-export/
 ├── obsidian-git/
 ├── obsidian-image-auto-upload-plugin/
+├── obsidian-latex-suite/
 ├── obsidian-linter/
 ├── obsidian-vault-statistics-plugin/
 ├── obsidian-vimrc-support/
@@ -49,7 +53,9 @@ plugins
 git clone https://gitee.com/yangsl306/obsidian-config.git
 
 cd obsidian-config
-cp -r .obsidian/ .obsidian.vimrc .gitignore path-to-vault/
+
+cp -r .obsidian/ .obsidian.vimrc .gitignore update_obsidian_md path-to-vault/
+cp Makefile_obsd path-to-vault/Makefile
 ```
 
 ---
@@ -57,6 +63,7 @@ cp -r .obsidian/ .obsidian.vimrc .gitignore path-to-vault/
 ## 注意事项
 
 `.obsidian` 目录中的 `workspace.json` 文件以及 `.obsidian/plugins/obsidian-icon-folder/icons/tabler-icons/` 插件（该插件现已卸载）目录不进行同步，将其写进 `.gitignore` 文件中，若已 push 到远程 repo，可输入下列命令将其删除：
+
 >[用git同步obsidian手机端与台式机的配置文件频繁冲突的问题的解决方案 - 知乎](https://zhuanlan.zhihu.com/p/492104181)
 
 ```bash
