@@ -2,7 +2,7 @@
 
 [![CI Status](https://github.com/Bit-Part-Young/obsidian-config/actions/workflows/mkdocs-deploy.yml/badge.svg)](https://github.com/Bit-Part-Young/obsidian-config/actions/workflows/mkdocs-deploy.yml)
 
-个人用 obsidian 软件配置文件。
+个人用 obsidian 软件配置。
 
 - **Repo**: [https://github.com/Bit-Part-Young/obsidian-config](https://github.com/Bit-Part-Young/obsidian-config)
 - **Full Documentation**: [README.md](https://github.com/Bit-Part-Young/obsidian-config) / [obsidian-config Documentation](https://seekanotherland.xyz/obsidian-config/)
