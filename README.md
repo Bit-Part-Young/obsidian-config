@@ -1,6 +1,14 @@
 # Obsidian config
 
-个人用 obsidian 软件配置。
+[![CI Status](https://github.com/Bit-Part-Young/obsidian-config/actions/workflows/mkdocs-deploy.yml/badge.svg)](https://github.com/Bit-Part-Young/obsidian-config/actions/workflows/mkdocs-deploy.yml)
+
+个人用 obsidian 软件配置文件。
+
+效果图：
+
+![vault-screenshot.png](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/images/202312120853566.png)
+
+<!-- ![vault-screenshot.png](./assets/vault-screenshot.png) -->
 
 ---
 
@@ -16,8 +24,8 @@
 
 - `.obsidian/` - obsidian 主题、核心及社区插件、快捷键等设置
 - `.obsidian.vimrc` - obsidian vim 插件的 .vimrc 配置文件
-- `.gitignore` - gitignore 文件
-- `Makefile` - Makefile 文件
+- `.gitignore` - 忽略文件
+- `Makefile` - Makefile 文件（自动 git push）
 
 ---
 
@@ -25,47 +33,57 @@
 
 ```txt
 plugins
-├── dataview/
-├── editing-toolbar/
-├── emoji-shortcodes/
-├── math-booster/
-├── mathlinks/
-├── obsidian-admonition/
-├── obsidian-auto-link-title/
-├── obsidian-enhancing-export/
-├── obsidian-git/
-├── obsidian-image-auto-upload-plugin/
-├── obsidian-latex-suite/
-├── obsidian-linter/
-├── obsidian-vault-statistics-plugin/
-├── obsidian-vimrc-support/
-├── remember-cursor-position/
-└── table-editor-obsidian/
+├── editing-toolbar/  # 在文档最上方添加类 Office 工具栏
+├── emoji-shortcodes/  # markdown emoji 表情
+├── obsidian-admonition/  # obsidian alert 语法插件 
+├── obsidian-auto-link-title/  # 自动获取 URL 标题
+├── obsidian-enhancing-export/  # 文件格式导出增强
+├── obsidian-git/  # git 插件
+├── obsidian-image-auto-upload-plugin/  # 借助 picgo 实现图片自动上传
+├── obsidian-linter/  # 文档格式化
+├── obsidian-vault-statistics-plugin/  # 统计 obsidian vault 相关信息
+├── obsidian-vimrc-support/  # vim 插件
+├── remember-cursor-position/  # 记录光标位置
+└── table-editor-obsidian/  # markdown 表格增强
 ```
 
->相关插件介绍可点击查看 [Obsidian 使用](https://seekanotherland.xyz/hexo-demo/posts/4661.html)
+相关插件介绍可点击查看： [Obsidian 使用](https://seekanotherland.xyz/hexo-demo/posts/4661.html)。
 
 ---
 
 ## 安装 & 使用
 
-**需先使你的 obsidian vault git 初始化**
+- **git 初始化你的 obsidian vault**
 
 ```bash
+cd obsidian-vault/
+
+git init
+```
+
+- 按照以下步骤拷贝配置文件
+
+```bash
+git clone https://github.com/Bit-Part-Young/obsidian-config.git
+# or
 git clone https://gitee.com/yangsl306/obsidian-config.git
 
 cd obsidian-config
 
-cp -r .obsidian/ .obsidian.vimrc .gitignore Makefile path-to-vault/
+cp -r .obsidian/ .obsidian.vimrc .gitignore Makefile obsidian-vault/
 ```
+
+- 信任仓库作者并启用插件
 
 ---
 
-## 注意事项
+## 忽略文件
 
-`.obsidian` 目录中的 `workspace.json` 文件以及 `.obsidian/plugins/obsidian-icon-folder/icons/tabler-icons/` 插件（该插件现已卸载）目录不进行同步，将其写进 `.gitignore` 文件中，若已 push 到远程 repo，可输入下列命令将其删除：
+可忽略的文件或目录
 
 ```bash
-git rm --cached .obsidian/workspace.json 
-git rm -r --cached .obsidian/plugins/obsidian-icon-folder/icons/tabler-icons/
+.obsidian/workspace.json
+# 该插件已卸载
+.obsidian/plugins/obsidian-icon-folder/icons/
+.obsidian/plugins/remember-cursor-position/cursor-positions.json
 ```
