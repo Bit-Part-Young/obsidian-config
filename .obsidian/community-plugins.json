@@ -10,9 +10,5 @@
   "obsidian-vault-statistics-plugin",
   "obsidian-vimrc-support",
   "obsidian-linter",
-  "obsidian-git",
-  "math-booster",
-  "obsidian-latex-suite",
-  "mathlinks",
-  "dataview"
+  "obsidian-git"
 ]
