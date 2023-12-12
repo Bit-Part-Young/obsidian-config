@@ -4,6 +4,12 @@
 
 个人用 obsidian 软件配置文件。
 
+- **Repo**: [https://github.com/Bit-Part-Young/obsidian-config](https://github.com/Bit-Part-Young/obsidian-config)
+- **Full Documentation**: [README.md](https://github.com/Bit-Part-Young/obsidian-config) / [obsidian-config Documentation](https://seekanotherland.xyz/obsidian-config/)
+
+
+---
+
 效果图：
 
 ![vault-screenshot.png](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/images/202312120853566.png)
@@ -51,7 +57,7 @@ plugins
 
 ---
 
-## 安装 & 使用
+## 使用
 
 - **git 初始化你的 obsidian vault**
 
