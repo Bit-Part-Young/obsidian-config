@@ -80,5 +80,14 @@
       ],
       "key": "0"
     }
+  ],
+  "app:open-vault": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "O"
+    }
   ]
 }
