@@ -2,7 +2,7 @@
 
 [![CI Status](https://github.com/Bit-Part-Young/obsidian-config/actions/workflows/mkdocs-deploy.yml/badge.svg)](https://github.com/Bit-Part-Young/obsidian-config/actions/workflows/mkdocs-deploy.yml)
 
-个人用 obsidian 软件配置。
+个人用 Obsidian 软件配置。
 
 - **Repo**: [https://github.com/Bit-Part-Young/obsidian-config](https://github.com/Bit-Part-Young/obsidian-config)
 - **Full Documentation**: [README.md](https://github.com/Bit-Part-Young/obsidian-config) / [obsidian-config Documentation](https://seekanotherland.xyz/obsidian-config/)
@@ -10,7 +10,7 @@
 
 ---
 
-效果图：
+外观效果图：
 
 ![vault-screenshot.png](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/images/202312120853566.png)
 
@@ -28,8 +28,8 @@
 └── Makefile
 ```
 
-- `.obsidian/` - obsidian 主题、核心及社区插件、快捷键等设置
-- `.obsidian.vimrc` - obsidian vim 插件的 .vimrc 配置文件
+- `.obsidian/` - Obsidian 主题、核心及社区插件、快捷键等设置
+- `.obsidian.vimrc` - Obsidian vim 插件的 .vimrc 配置文件
 - `.gitignore` - 忽略文件
 - `Makefile` - Makefile 文件（自动 git push）
 
@@ -50,6 +50,7 @@ plugins
 ├── obsidian-vault-statistics-plugin/  # 统计 obsidian vault 相关信息
 ├── obsidian-vimrc-support/  # vim 插件
 ├── remember-cursor-position/  # 记录光标位置
+├── remotely-save/  # 数据同步服务
 └── table-editor-obsidian/  # markdown 表格增强
 ```
 
@@ -59,7 +60,7 @@ plugins
 
 ## 使用
 
-- **git 初始化你的 obsidian vault**
+- **git 初始化你的 Obsidian vault**
 
 ```bash
 cd obsidian-vault/
@@ -81,6 +82,8 @@ cp -r .obsidian/ .obsidian.vimrc .gitignore Makefile obsidian-vault/
 
 - 信任仓库作者并启用插件
 
+>对于 PC - 手机端同步（**使用场景：手机端个人主要随时记录想法或看到的一些有用链接，仅这些内容需要同步，不需要太多的插件**），可以开启 Remotely Save 插件，选择性开启其他插件（如 Git 插件可关闭）。
+
 ---
 
 ## 忽略文件
@@ -89,7 +92,8 @@ cp -r .obsidian/ .obsidian.vimrc .gitignore Makefile obsidian-vault/
 
 ```bash
 .obsidian/workspace.json
-# 该插件已卸载
+
+# 下列插件已卸载
 .obsidian/plugins/obsidian-icon-folder/icons/
 .obsidian/plugins/remember-cursor-position/cursor-positions.json
 ```
