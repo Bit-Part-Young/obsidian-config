@@ -7,7 +7,6 @@
 - **Repo**: [https://github.com/Bit-Part-Young/obsidian-config](https://github.com/Bit-Part-Young/obsidian-config)
 - **Full Documentation**: [README.md](https://github.com/Bit-Part-Young/obsidian-config) / [obsidian-config Documentation](https://seekanotherland.xyz/obsidian-config/)
 
-
 ---
 
 外观效果图：
@@ -15,6 +14,16 @@
 ![vault-screenshot.png](https://cdn.jsdelivr.net/gh/Bit-Part-Young/BTY-imgs/images/202312120853566.png)
 
 <!-- ![vault-screenshot.png](./assets/vault-screenshot.png) -->
+
+---
+
+自定义快捷键：
+
+| 功能 | 快捷键 |
+| :--: | :--: |
+| 打开 Vault | `Ctrl + Alt + O` |
+| 插入水平线 | `Ctrl + Alt + H` |
+| 插入代码块 | `Ctrl + Alt + K` |
 
 ---
 
