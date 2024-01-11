@@ -1,17 +1,14 @@
-exmap wq obcommand workspace:close
-exmap q obcommand workspace:close
-
 nmap ; :
 
 " Have j and k navigate visual lines rather than logical ones
 nmap j gj
 nmap k gk
 
-"快速跳转
+" jump quickly
 nmap J 5j
 nmap K 5k
 
-" Quickly remove search highlights
+" remove search highlights
 nmap <F5> :nohl
 
 
@@ -19,31 +16,26 @@ nmap <F5> :nohl
 nmap [ {
 nmap ] }
 
-" I like using H and L for beginning/end of line
+" beginning/end of line
 nmap H ^
 nmap L $
 
 " Change insert mode to Normal mode
 imap jj <Esc>
 
-exmap nextHeading jsfile mdHelpers.js {jumpHeading(true)}
-exmap prevHeading jsfile mdHelpers.js {jumpHeading(false)}
-nmap ]] :nextHeading
-nmap [[ :prevHeading
 
+exmap surround_double_quotes surround " "
+exmap surround_backticks surround ` `
+exmap surround_brackets surround ( )
+exmap surround_brackets_chinese surround （ ）
+map tt :surround_double_quotes
+map ff :surround_backticks
+map mm :surround_brackets
+map mn :surround_brackets_chinese
 
-exmap surround_codeblock surround ` `
-map ff :surround_codeblock
-
-
-
-" rename file
-exmap renameFile obcommand Obsidian-VimEx:file-rename-modal
-nmap gr :renameFile
 
 " Emulate Folding https://vimhelp.org/fold.txt.html#fold-commands
 exmap togglefold obcommand editor:toggle-fold
 nmap zo :togglefold
 nmap zc :togglefold
 nmap za :togglefold
-
