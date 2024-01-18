@@ -10,5 +10,6 @@
   "obsidian-vault-statistics-plugin",
   "obsidian-vimrc-support",
   "obsidian-linter",
-  "obsidian-git"
+  "obsidian-git",
+  "floating-toc"
 ]
