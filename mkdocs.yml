@@ -1,9 +1,9 @@
-site_name: obsidian config
-site_description: Obsidian configuration for self usage.
+site_name: Obsidian configuration template
+site_description: Obsidian configuration template
 site_url: https://seekanotherland.xyz/obsidian-config/
 repo_name: Bit-Part-Young/obsidian-config/
 repo_url: https://github.com/Bit-Part-Young/obsidian-config/
-copyright: Copyright &copy 2023-2023
+copyright: Copyright &copy 2023-2024
 
 
 theme:
