@@ -3,6 +3,7 @@ site_description: Obsidian configuration template
 site_url: https://seekanotherland.xyz/obsidian-config/
 repo_name: Bit-Part-Young/obsidian-config/
 repo_url: https://github.com/Bit-Part-Young/obsidian-config/
+edit_uri: blob/main/docs/
 copyright: Copyright &copy 2023-2024
 
 
